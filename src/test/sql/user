@@ -1,0 +1,21 @@
+-- ----------------------------
+-- Table structure for `user`
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` decimal(20,0) NOT NULL,
+  `user_name` varchar(30) DEFAULT NULL,
+  `password` varchar(30) DEFAULT NULL,
+  `real_name` varchar(64) DEFAULT NULL,
+  `nick_name` varchar(30) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `email` varchar(64) DEFAULT NULL,
+  `address` varchar(128) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `gender` int(2) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `update_time` datetime DEFAULT NULL,
+  `last_login_time` datetime DEFAULT NULL,
+  `login_failed_times` int(2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
