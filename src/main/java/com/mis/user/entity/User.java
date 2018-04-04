@@ -1,4 +1,4 @@
-package com.mis.login.entity;
+package com.mis.user.entity;
 
 import com.mis.common.entity.BaseEntity;
 
