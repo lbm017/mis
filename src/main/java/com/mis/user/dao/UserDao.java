@@ -2,6 +2,7 @@ package com.mis.user.dao;
 
 import com.mis.user.entity.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -10,5 +11,6 @@ import java.util.List;
  */
 @Mapper
 public interface UserDao {
-    public List<User> getById(Long id);
+
+    public User getById(Long id);
 }

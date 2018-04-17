@@ -1,5 +1,8 @@
 package com.mis.user.service;
 
+import com.mis.user.dao.UserDao;
+import com.mis.user.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -7,4 +10,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService {
+    @Autowired
+    private UserDao userDao;
+
+    public User getUserById(Long id){
+        return userDao.getById(id);
+    }
 }
