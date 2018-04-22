@@ -12,5 +12,5 @@ import java.util.List;
 @Mapper
 public interface UserDao {
 
-    public User getById(Long id);
+    public User getById(long id);
 }

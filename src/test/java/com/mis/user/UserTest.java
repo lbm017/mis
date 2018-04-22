@@ -26,6 +26,6 @@ public class UserTest {
     public void getUserByIdTest(){
         Long id=1l;
         User user = userService.getUserById(id);
-        System.out.println(user.getRealName());
+        System.out.println(user.getUserName());
     }
 }
